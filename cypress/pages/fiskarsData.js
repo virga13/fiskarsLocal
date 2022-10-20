@@ -33,8 +33,7 @@ export class FiskarsData{
 
     checkToolsUsedAndNo(){
         cy.get('.has-no-link-styles').should('have.attr', 'target', '_blank').each(($el) => {
-            for (i=0; i<=4; i++)
-            $el = 'Tool' + 1
+            const x = $el + 1
             cy.log($el)
         })
     }
